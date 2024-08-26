@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title> Calculator </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="div1">
+        <div id="bd">
+            <div id="ca">
+                <input type="text" id="result" readonly placeholder="0">
+                <div id="grid">
+                    <button></button>
+                    <button></button>
+                    <button onclick="displayData('.')">.</button>
+                    <button class="ps" onclick="displayData('/')"><i class="fa-solid fa-divide"></i></button>
+                    <button onclick="displayData('7')">7</button>
+                    <button onclick="displayData('8')">8</button>
+                    <button onclick="displayData('9')">9</button>
+                    <button onclick="displayData('*')" class="ps">x</button>
+                    <button onclick="displayData('4')">4</button>
+                    <button onclick="displayData('5')">5</button>
+                    <button onclick="displayData('6')">6</button>
+                    <button  onclick="displayData('-')"class="ps">-</button>
+                    <button onclick="displayData('1')">1</button>
+                    <button onclick="displayData('2')">2</button>
+                    <button onclick="displayData('3')">3</button>
+                    <button  onclick="displayData('+')"class="ps">+</button>
+                    <button onclick="displayData('0')">0</button>
+                    <button onclick="removeLastValue()"><i class="fa-solid fa-delete-left"></i></button>
+                    <button onclick="ClearCalScreen()">AC</button>
+                    <button id="eq" onclick="evaluateExp()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

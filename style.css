@@ -1,0 +1,66 @@
+ body{
+    background-color: ghostwhite;
+ }
+ #grid{
+    display: grid;
+    grid-template-columns:  100px 100px  100px auto;
+    height:300px;
+    gap:1px;
+    width:100%;
+    
+} 
+
+
+#div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#ca{
+    width: 500px;
+    height: 400px;
+    padding:20px;
+    border: solid;
+    border-radius: 10px;
+    
+    
+    
+}
+
+input{
+    width: 99%;
+    height: 80px;   
+    margin-bottom:20px;
+    font-size: 60px;
+    text-align: right;
+    align-items: end;
+    background-color: cornsilk;
+}
+
+input:focus {
+    outline: none;
+    
+    
+}
+button{
+ font-size: 25px;
+ border-color:gainsboro;
+ background-color: white;
+}
+
+
+#eq{
+    background-color: cornsilk;
+    font-size: 30px;
+}
+
+#eq:focus{
+    background-color: aliceblue;
+}
+
+.ps:focus{
+    background-color: aliceblue;
+}
+
